@@ -11,7 +11,7 @@ public class Task81 {
     public static final int amountOfMonthsInYear = 12;
     public static final double percent15 = 1.5;
 
-    public static void main(String[] args) {
+    public static void amountOfMoney() {
         System.out.println("Введите количество лет: ");
         Scanner scanner = new Scanner(System.in);
         int amountOfMonthsInYears = scanner.nextInt() * amountOfMonthsInYear;
