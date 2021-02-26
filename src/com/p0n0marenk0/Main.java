@@ -17,8 +17,9 @@ public class Main {
         int amountOfMonthsInYears = scanner.nextInt() * amountOfMonthsInYear;
         System.out.println("Введите сумму: ");
         double summary = scanner.nextDouble();
-        double percent = summary * percent15 / 100;
-        double summ = summary + (percent * amountOfMonthsInYears);
-        System.out.println("money= " + summ);
+        for (int i = 0; i < amountOfMonthsInYears; i++) {
+            summary = summary + ((summary / 100) * percent15);
+        }
+        System.out.println("money= " + summary);
     }
 }
